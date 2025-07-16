@@ -1,0 +1,5 @@
+com/murad/quizapp/QuizappApplication.class
+com/murad/quizapp/service/QuestionService.class
+com/murad/quizapp/dao/QuestionDao.class
+com/murad/quizapp/controller/QuestionController.class
+com/murad/quizapp/model/Question.class
