@@ -1,9 +1,6 @@
 package com.murad.quizapp.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
@@ -12,6 +9,7 @@ public class Question {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "question_seq", sequenceName = "question_id_seq", allocationSize = 1)
     private Integer id;
     private String questionTitle;
     private String option1;
