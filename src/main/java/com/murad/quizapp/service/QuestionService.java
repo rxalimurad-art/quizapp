@@ -17,4 +17,8 @@ public class QuestionService {
         questionDao.findAll().forEach(question -> System.out.println(question.getQuestionTitle()));
         return questionDao.findAll();
     }
+
+    public List<Question> getQuestionsByCategory(String category) {
+        return questionDao.findByCategoryIgnoreCase(category);
+    }
 }
